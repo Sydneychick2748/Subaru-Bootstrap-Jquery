@@ -97,8 +97,26 @@
     text-align: center;
 }
 
+
+   /* Prevent the arrows from moving on smaller screens */
 @media (max-width: 780px) {
     .carousel-control {
-      display: none;
+        top: 50%; /* Keep them centered on small screens */
+        transform: translateY(-50%); /* Ensure consistent vertical centering */
+        width: 5%; /* Keep clickable area small */
     }
-  }
+
+  
+
+/* Hide the background area around the arrows */
+.carousel-control.left, .carousel-control.right {
+    background-image: none; /* Remove any background image */
+    background-color: transparent; /* Ensure background is transparent */
+}
+
+/* Adjust arrow size if needed */
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+    font-size: 20px; /* Adjust size of arrow */
+    
+}
+}
