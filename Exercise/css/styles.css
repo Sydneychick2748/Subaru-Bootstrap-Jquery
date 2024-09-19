@@ -98,25 +98,30 @@
 }
 
 
-   /* Prevent the arrows from moving on smaller screens */
-@media (max-width: 780px) {
+
+
+
+
+
+/* Style the carousel dots (indicators) for screens between 360px and 780px */
+@media  (max-width: 780px) {
     .carousel-control {
-        top: 50%; /* Keep them centered on small screens */
-        transform: translateY(-50%); /* Ensure consistent vertical centering */
-        width: 5%; /* Keep clickable area small */
+        display: none;
     }
 
-  
-
-/* Hide the background area around the arrows */
-.carousel-control.left, .carousel-control.right {
-    background-image: none; /* Remove any background image */
-    background-color: transparent; /* Ensure background is transparent */
-}
-
-/* Adjust arrow size if needed */
-.glyphicon-chevron-left, .glyphicon-chevron-right {
-    font-size: 20px; /* Adjust size of arrow */
+    /* Ensure dots (indicators) are visible */
+    .carousel-indicators {
+        display: block;
+        bottom: 10px; /* Adjust position as necessary */
+    }
     
-}
+    .carousel-indicators li {
+        background-color: transparent; /* Fully transparent background */
+        border: none; /* Remove border */
+    }
+
+    .carousel-indicators .active {
+        background-color: transparent; /* Fully transparent active dot */
+    }
+    
 }
