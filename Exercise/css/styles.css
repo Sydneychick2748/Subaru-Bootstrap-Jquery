@@ -1,0 +1,104 @@
+
+
+#hero-jumbotron {
+    height: 600px;
+    background-size: contain;
+    background-position: center center;
+}
+
+@media (max-width: 780px) {
+    #hero-jumbotron {
+        height: 400px;
+        background-size: contain;
+        background-position: center center;
+    }
+
+    .jumbotron-btn {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+
+    #hero-jumbotron h1 {
+        font-size: 24px;
+    }
+
+    #hero-jumbotron p {
+        font-size: 14px;
+    }
+
+    .btn-lg {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+.jumbotron-btn {
+    font-size: 18px;
+    padding: 10px 25px;
+}
+
+@media (min-width: 781px) {
+    .carousel-text {
+        display: none;
+    }
+
+    .carousel-caption {
+        display: block;
+    }
+}
+
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.card-heading {
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+@media (max-width: 780px) {
+    .card-heading {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .carousel-indicators {
+        bottom: -30px;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 50px;
+    left: 15%;
+    right: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+}
+.carousel-text {
+    display: none; 
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px; 
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 780px) {
+    .carousel-control {
+      display: none;
+    }
+  }
